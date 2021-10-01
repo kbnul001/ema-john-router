@@ -52,12 +52,14 @@ const Shop = () => {
 
     return (
         <>
+            {/* search container  */}
             <div className="search-container">
                 <input
                     type="text"
                     onChange={handleSearch}
                     placeholder="Search Product" />
             </div>
+            {/* shop container  */}
             <div className="shop-container">
                 <div className="product-container">
                     {
@@ -69,6 +71,7 @@ const Shop = () => {
                         </Product>)
                     }
                 </div>
+                {/* cart container  */}
                 <div className="cart-container">
                     <Cart cart={cart}></Cart>
                 </div>
